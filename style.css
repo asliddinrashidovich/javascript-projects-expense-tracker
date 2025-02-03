@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #666;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.title {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.box {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+}
+.header {
+    background-color: #3335b0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+.header__total {
+    margin-bottom: 20px;
+}
+.header__total h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.header__both {
+    display: flex;
+    justify-content: space-around;
+}
+.header__both h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.header__list h2 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+.header__list ul li {
+    margin: 10px 4px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.3s;
+    padding: 0 5px;
+}
+.header__list ul li:hover {
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
+.header__list ul li:hover .list__delete {
+    right: 0;
+} 
+.list__title {
+    margin: 5px;
+}
+.list__value {
+    margin:5px 30px;
+}
+.track h2 {
+    margin: 10px 0;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.track__type {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+    padding: 6px;
+    gap: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+}
+.track__type .checked {
+    background-color: #fff;
+}
+.track__type label {
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+.track__type label input[type="radio" i] {
+    display: none;
+}
+.track__type label span {
+    font-weight: 600;
+}
+.track__name span {
+    font-weight: 600;
+}
+.track__name input {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 19px;
+    border: 1px solid #444;
+}
+.track__data {
+    display: grid;
+    margin: 10px 0;
+    gap: 6px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}   
+.track__data label span {
+    font-weight: 600;
+}
+.track__data label input {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 19px;
+    border: 1px solid #444;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #3335b0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 700;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4f51d0;
+}
+.expense__color {
+    color: red;
+}
+.income__color {
+    color: #65e91e;
+}
+.list__delete {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: auto;
+    padding: 15px;
+    height: 100%;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    position: absolute;
+    right: -45px;
+}
+.list__delete:hover {
+    background-color: rgb(147, 0, 0);
+}
